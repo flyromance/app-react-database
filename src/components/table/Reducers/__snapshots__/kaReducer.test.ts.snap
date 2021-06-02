@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`kaReducer ReorderColumns default 1`] = `
+Object {
+  "columns": Array [
+    Object {
+      "key": "2",
+    },
+    Object {
+      "key": "3",
+    },
+    Object {
+      "key": "1",
+    },
+    Object {
+      "key": "4",
+    },
+  ],
+  "rowKeyField": "id",
+}
+`;
+
+exports[`kaReducer ReorderRows default 1`] = `
+Object {
+  "data": Array [
+    Object {
+      "id": 2,
+    },
+    Object {
+      "id": 3,
+    },
+    Object {
+      "id": 1,
+    },
+    Object {
+      "id": 4,
+    },
+  ],
+  "rowKeyField": "id",
+}
+`;
+
+exports[`kaReducer ReorderRows inner keys 1`] = `
+Object {
+  "data": Array [
+    Object {
+      "a": Object {
+        "id": 2,
+      },
+    },
+    Object {
+      "a": Object {
+        "id": 3,
+      },
+    },
+    Object {
+      "a": Object {
+        "id": 1,
+      },
+    },
+    Object {
+      "a": Object {
+        "id": 4,
+      },
+    },
+  ],
+  "rowKeyField": "a.id",
+}
+`;
+
+exports[`kaReducer SelectRowsRange default 1`] = `
+Array [
+  2,
+  3,
+  4,
+]
+`;
+
+exports[`kaReducer SelectRowsRange revert set 1`] = `
+Array [
+  2,
+  3,
+  4,
+]
+`;
+
+exports[`kaReducer SelectRowsRange rowKeyValueTo is not specified 1`] = `
+Array [
+  2,
+]
+`;
+
+exports[`kaReducer SelectRowsRange skip if rowKeyValue is not found 1`] = `
+Array [
+  undefined,
+  1,
+  2,
+]
+`;
+
+exports[`kaReducer SelectRowsRange skip if rowKeyValueTo is not found 1`] = `
+Array [
+  undefined,
+  1,
+  2,
+]
+`;
+
+exports[`kaReducer SetSingleAction 1`] = `
+Object {
+  "type": "LoadData",
+}
+`;

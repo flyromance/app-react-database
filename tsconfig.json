@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    // Project Options
+    "allowJs": false,
+    "checkJs": false,
+    "noEmit": false,
+    "noEmitOnError": false,
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "downlevelIteration": true,
+    // "tsBuildInfoFile": "",
+    "jsx": "react",
+    "removeComments": true,
+    // "composite": false, // 默认是false
+    // "rootDir": "", // 如果composite是true，则它为包含tsconfig.json的目录
+    // "outDir": "",
+    "target": "es5",
+    "module": "esnext",
+    "importHelpers": true,
+    "isolatedModules": true,
+    "lib": ["esnext", "DOM"],
+
+    // Module Resolution Options
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    // "baseUrl": ".", // 如果设置了paths，baseUrl必须设置
+    // "paths": {},
+    // "typeRoots": [], 设置了会覆盖默认的 “node_module/@type”
+
+    // Source Maps Options
+    "inlineSourceMap": false,
+
+    // strict checkes Options
+    "alwaysStrict": true,
+    "strict": true,
+    "noImplicitAny": false, // 默认true(不能有隐式any)
+    "noImplicitThis": false, // 默认true(不能有隐式this)
+    "strictNullChecks": true,
+
+    // linter checks Options
+    "noImplicitReturns": false,
+    // "noImplicitOverride": false, // 4.3才有，目前是beta
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+
+    // Experimental Options
+    "emitDecoratorMetadata": true, // 默认false
+    "experimentalDecorators": true, // 默认false
+
+    // advanced
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true // 默认false
+    // "noEmitHelpers": true, // 默认false
+    // "preserveConstEnums": false
+  }
+}
